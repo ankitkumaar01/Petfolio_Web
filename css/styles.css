@@ -1,0 +1,779 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  text-align: inherit;
+}
+
+/*fonts*/
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+#wrapper {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+header .container {
+  position: relative;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap");
+
+.navbar {
+  display: flex;
+  padding: 5px 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_count img {
+  height: 80px;
+}
+
+.icon_content-group i {
+  margin-right: 6px;
+}
+
+.icon_count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav_items {
+  border-top: 0.5px solid #eee;
+}
+
+.nav_items ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 60px;
+  align-items: center;
+  padding: 12px 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.slide-card {
+  padding: 10px;
+}
+
+.slide-content {
+  border: 1px solid red;
+}
+
+.cow_group_container {
+  background-image: url("../assets/Group_cow-banner.png");
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #f0fcff;
+}
+
+.cow_group_container h1 {
+  font-size: 58px;
+  font-family: "Rum Raisin", sans-serif;
+  line-height: 100%;
+}
+
+.cow_group_container p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 14px;
+}
+
+.expo_btn {
+  width: 180px;
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  border-radius: 9px;
+  background-color: #e96069;
+  color: #fff;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+/*  +++++++++++ Cow Misssion Container ++++++++++++++ */
+
+.cow_mission-container {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  padding: 50px;
+  background-color: #f0fcff;
+  height: 100vh;
+  margin: 0;
+}
+
+.cow_group_img {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 14px;
+}
+
+.group_cow_img img {
+  width: 320px;
+  height: 611px;
+}
+
+.single_cow_img img {
+  width: 298px;
+  height: 485px;
+  margin-top: 126px;
+}
+
+.mission_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  /* border: 1px solid black; */
+}
+
+.mission_content h2 {
+  font-size: 42px;
+  font-weight: 400;
+  font-family: "Rum Raisin", sans-serif;
+  color: #333544;
+  margin-bottom: 12px;
+}
+
+.first_para {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-top: 14px;
+  margin-bottom: 12px;
+}
+
+.second_para {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-top: 14px;
+}
+
+.miss_vis_gropu_content {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  /* column-gap: 16px; */
+}
+
+.vis_content,
+.mis_content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+}
+
+.vision,
+.mission {
+  color: #031f4e;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+}
+
+.fa-check {
+  color: #f7b631;
+  font-weight: 800;
+}
+
+.vision_list span {
+  margin-left: 8px;
+}
+
+.mission_list span {
+  margin-left: 8px;
+}
+
+.vision_list,
+.mission_list {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+/* +++++++++++++++++++ Farms Container +++++++++++++++ */
+
+.farms_container {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  padding: 80px;
+  padding-bottom: 80px;
+  gap: 20px;
+  /* border: 2px solid black; */
+}
+
+.maniture_cow img {
+  width: 540px;
+  height: 316px;
+  border-radius: 8px;
+}
+
+.farms img {
+  width: 540px;
+  height: 316px;
+  border-radius: 8px;
+}
+
+.farms_grid h1 {
+  font-size: 34px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  margin-top: 14px;
+}
+
+.farms_grid p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.read_more {
+  width: 184px;
+  height: 50px;
+  margin-top: 14px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  background-color: #e96069;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 14px;
+}
+
+/*   ++++++++++++++++ Card Expolre Container Box +++++++++++++++++ */
+
+.slider_container {
+  height: 731px;
+  background-color: #87cbca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider .slider_card {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.slider_card img {
+  width: 285px;
+  height: 315px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.slider_card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.slider_card:hover {
+  transform: scale(1.04);
+  transition: transform 0.3s ease-in-out;
+}
+
+.explore_title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Rum Raisin", sans-serif;
+  margin-bottom: 18px;
+}
+
+.card_footer {
+  height: 93px;
+  width: 285px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card_footer span {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #333544;
+}
+
+.card_footer p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+/*  ++++++++++++++++ Award Sections Here +++++++++++++++++ */
+
+.award_container {
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 308px;
+  /* border: 3px solid black; */
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ++++++++++++++++++++++ Contact Us Sections Here +++++++++++++++++ */
+
+.contact_Us {
+  background-image: url("../../assets/cow_img.jpg");
+  background-size: cover;
+  height: 389px;
+  width: 1240px;
+  margin: auto;
+  margin-top: 6%;
+  padding: 50px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.contact_Us h2 {
+  font-family: "Rum Raisin", sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 20px 0px;
+  /* border: 3px solid black; */
+  width: 380px;
+}
+
+.contact_Us p {
+  color: #ffffff;
+  padding: 20px 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contact_Us button {
+  background-color: #3c86cb;
+  height: 60px;
+  width: 184px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 58px;
+  border: none;
+  margin-top: 20px;
+}
+
+/*  ++++++++++++++++ Explore Container Style Here _++++++++++ */
+.breeds_container {
+  height: 350px;
+  width: 1240px;
+  margin: auto;
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  column-gap: 24px;
+  align-items: center;
+}
+
+.card {
+  width: 276px;
+  height: 344px;
+  border-radius: 24px;
+  box-shadow: #0000001a;
+  padding: 20px;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.breeds_content {
+  padding: 18px;
+}
+
+.breeds_content h2 {
+  font-size: 42px;
+  font-family: "Rum Raisin", sans-serif;
+  width: 167px;
+}
+
+.breeds_content p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #7f7f84;
+}
+
+.card_content span {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  padding-top: 10px;
+  color: #333544;
+}
+
+.card_content p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  padding-top: 20px;
+  color: #494949;
+}
+
+/*  +++++++++++++ FAQ SECTION HERE ++++++++++++++++++ */
+
+.faq_container {
+  height: 750px;
+  background-color: #f0f8f7;
+  margin-top: 6%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.faq_container h2 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Rum Raisin", sans-serif;
+}
+
+.accordian_section {
+  width: 100%;
+  max-width: 1124px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordian {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  background-color: #ffffff;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  border: none;
+  outline: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 14px;
+}
+
+.accordian:hover {
+  background-color: #ddd;
+}
+
+.accordian.active {
+  background-color: #ccc;
+}
+
+.accordian i {
+  transition: transform 0.3s ease;
+}
+
+.accordian.active i {
+  transform: rotate(180deg);
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0 0 12px 12px;
+}
+
+.panel_content {
+  padding: 28px 27px;
+  font-size: 18px;
+  border-top: 0.5px solid gray;
+  background-color: #ffffff;
+  text-align: start;
+  line-height: 28px;
+}
+
+/*  +++++++++++++ Footer Container  ++++++++++++++ */
+
+.footer_container {
+  height: 640px;
+  background-color: #222222;
+  color: #fff;
+  padding: 20px 0px;
+}
+
+.footer_content {
+  max-width: 1255px;
+  height: 580px;
+  margin: auto;
+  /* border: 2px solid rgb(38, 255, 0); */
+}
+
+.list_content_container {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+  padding: 20px;
+  /* border: 2px solid red; */
+}
+
+.list_content {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 6px;
+}
+
+.list_content h2 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Rum Raisin", sans-serif;
+  color: #ddd;
+  margin-bottom: 14px;
+}
+
+.list_content span {
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ddd;
+  font-family: "Inter", sans-serif;
+}
+
+/* +++++++++++ Scanner _container Here +++++++++++ */
+
+.download_app_container {
+  display: grid;
+  grid-template-columns: 3fr 3fr 6fr;
+  grid-gap: 20px;
+  padding: 14px;
+}
+
+.scanner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  /* border: 2px solid rgb(199, 16, 6); */
+}
+
+.qr_code {
+  height: 120px;
+  width: 120px;
+  background-color: #fff;
+}
+
+.store_buttons img {
+  height: 130px;
+  margin-left: 50px;
+}
+
+.store_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  overflow: none;
+}
+
+/* +++++++++++++++++++ All Right Resevered Sections Here +++++++++++++++++ */
+
+.social_media_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-top: 0.5px solid #3e3e3e;
+}
+
+.reserverd_content {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.fa-brands {
+  margin-left: 14px;
+  font-size: 14px;
+  padding: 10px;
+  width: 36px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid gray;
+}
